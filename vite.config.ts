@@ -7,6 +7,7 @@ import basicSsl from '@vitejs/plugin-basic-ssl';
 // secure, but to test on a real Android device over the LAN we need HTTPS, which
 // the basic-ssl plugin provides with a self-signed certificate.
 export default defineConfig({
+  base: './',
   plugins: [react(), basicSsl()],
   server: {
     host: true,
