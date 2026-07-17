@@ -1,0 +1,35 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 6px 10px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-right: 4px;
+}
+
+@media (max-width: 600px) {
+  .brand {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .feedback {
+    margin-left: auto;
+  }
+}

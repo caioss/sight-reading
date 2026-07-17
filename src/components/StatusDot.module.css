@@ -1,0 +1,34 @@
+.trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-2);
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  box-shadow: 0 0 0 3px rgba(148, 163, 184, 0.15);
+}
+
+.dot[data-state='connected'] {
+  background: var(--ok);
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+}
+
+.dot[data-state='connecting'] {
+  background: #f59e0b;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+}
+
+.dot[data-state='error'] {
+  background: var(--error);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}

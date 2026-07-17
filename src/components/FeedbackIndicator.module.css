@@ -1,0 +1,34 @@
+.indicator {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+}
+
+.badge {
+  font-weight: 600;
+}
+
+.indicator[data-state='correct'] {
+  border-color: var(--ok);
+  background: rgba(34, 197, 94, 0.12);
+}
+
+.indicator[data-state='wrong'] {
+  border-color: var(--error);
+  background: rgba(239, 68, 68, 0.12);
+}
+
+.indicator[data-state='complete'] {
+  border-color: var(--accent);
+  background: rgba(56, 189, 248, 0.12);
+}
+
+.wrong {
+  color: var(--error);
+  font-weight: 600;
+}

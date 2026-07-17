@@ -1,0 +1,33 @@
+.scoreArea {
+  flex: 1;
+  overflow: auto;
+  padding: 12px;
+  background: var(--bg);
+  -webkit-overflow-scrolling: touch;
+}
+
+.errorBanner {
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  border: 1px solid var(--error);
+  border-radius: 8px;
+  background: rgba(239, 68, 68, 0.12);
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+
+.errorBanner strong {
+  color: var(--error);
+  margin-right: 6px;
+}
+
+.paper {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.osmd {
+  width: 100%;
+}
